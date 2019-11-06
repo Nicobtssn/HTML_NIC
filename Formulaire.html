@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Projet internet 2018-2019 Nico.">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" type="image/png" href="firefox01-04.png">
+
+
+    <title>ND website !</title>
+</head>
+<!-- Structure du code, balises de positionnement -> Header puis Div suivi de sections 
+        (article,aside) pour finir avec footer (div)-->
+
+<body>
+    <div id="contenu_page">
+        <!-- ######################## Header ###################### -->
+        <header>
+            <div id="mon_titre">
+                <h1><span>Mon site web</span></h1>
+                <center><img id="logo1" src="firefox01-04.png" alt="logo_du_site" width="128" height="128" /></center>
+
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="Accueil.html" id="accueil"><img src="Icone_Accueil.png" alt="accueil" width="80.2"
+                                height="80.2" /></a></li>
+                    <li><a href="AC.html" id="AC"><img src="Icone_AC.png" alt="AC" width="80.2" height="80.2" /></a>
+                    </li>
+                    <li><a href="TW3.html" id="TW3"><img src="icone_TW3.png" alt="TW3" width="80.2" height="80.2" /></a>
+                    </li>
+                    <li><a href="Rise.html" id="Rise"><img src="Icone_Rise.png" alt="Son_of_Rome" width="80.2"
+                                height="80.2" /></a></li>
+                    <li><a href="TLOU.html" id="The_last_of_us"><img src="Icone_TLOU.png" alt="Amiens" width="80.2"
+                                height="80.2" /></a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+            <article>
+
+                <h2>Voici le formulaire vous permettant de nous donner votre avis !</h2>
+
+                <form action="mailto:ndemolliens@la-providence.net" id="myForm">
+
+                    <!-- Création de la ligne statut avec le renseignement du statut -->
+
+                    <span class="form_col">Statut :</span>
+                    <label><input name="affiliation" type="radio" value="T" />Enseignant</label>
+                    <label><input name="affiliation" type="radio" value="S" />Etudiant</label>
+
+                    <br /><br />
+
+                    <!-- Création de la section de renseignement des nom et prénom -->
+
+                    <label class="form_col" for="lastName">Nom :</label>
+                    <input name="lastName" id="lastName" type="text" />
+
+                    <br /><br />
+
+                    <label class="form_col" for="firstName">Prénom :</label>
+                    <input name="firstName" id="firstName" type="text" />
+
+
+                    <h3>Proposer moi une note comprise entre 1 et 4</h3>
+
+                    <!-- type RADIO => permet la création d'un groupe d'option à choix unique -->
+
+                    <label class="form_col2"><input type="radio" name="check" value="1" />1: Excellent !</label><br />
+                    <label class="form_col2"><input type="radio" name="check" value="2" />2: Pas mal</label><br />
+                    <label class="form_col2"><input type="radio" name="check" value="3" />3: A améliorer</label><br />
+                    <label class="form_col2"><input type="radio" name="check" value="4" />4: A revoir complètement</label><br /><br />
+
+                    <center><textarea name="commentaire" ROWS=5 COLS=40></textarea></center>
+
+                    <br />
+
+                    <center><input type="submit" value="Valider le formulaire" onclick="check();" /> </center>
+                    <br /><br />
+
+
+                </form>
+
+            </article>
+
+
+        </section>
+        <!-- ######################## Footer ###################### -->
+        <footer>
+
+
+            <div>
+                <div id="merci">
+
+                    <h1>Merci de m'avoir laissé un commentaire. Et n'ésiter pas à revenir.</h1>
+                </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
